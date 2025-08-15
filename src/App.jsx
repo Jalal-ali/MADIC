@@ -42,7 +42,6 @@ const App = () => {
             </div>
           </div>
           {/* cards */}
-
           {/* ✅ Grid Section - Starts Here 👇 */}
           <section
             id="Projects"
