@@ -5,6 +5,19 @@ import CategoryCard from './components/CategoryCard.jsx'
 import ImageCard from './components/ImageCard.jsx'
 import { FaTwitch } from "react-icons/fa";
 import Slider from './components/Slider.jsx'
+import ProductCard from './components/ProductCard.jsx'
+import Emily from './assets/profiles/emily.png'
+import EmilyProduct from './assets/products/emily.png'
+import Richard from './assets/profiles/richard.png'
+import RichardProduct from './assets/products/richard.png'
+import Alex from './assets/profiles/alex.png'
+import AlexProduct from './assets/products/alex.png'
+import Mia from './assets/profiles/mia.png'
+import MiaProduct from './assets/products/mia.png'
+import Medal1 from './assets/backgrounds/rank-1.png'
+import Medal2 from './assets/backgrounds/rank-2.png'
+import Medal3 from './assets/backgrounds/rank-3.png'
+
 
 const App = () => {
   return (
@@ -167,7 +180,7 @@ const App = () => {
               <div className="bg-purple-500 h-40 rounded-xl"></div>
               <div className="bg-purple-500 h-40 rounded-xl"></div> */}
 
-              <button className="mt-2 bg-purple-700 text-white py-2 rounded-lg">
+              <button className="mt-2 bg-[#9147FF] text-white py-2 rounded-lg">
                 See More
               </button>
             </div>
@@ -194,7 +207,105 @@ const App = () => {
 
 
         </section>
+        {/* Products  */}
+        <section className="flex flex-col items-center gap-2  max-w-7xl w-full">
+          <h2 className="w-[308px] h-[36px] text-[36px] leading-[36px] font-normal text-[#24282B] md:self-start text-center md:text-left self-center mb-4">
+            Merch Collection
+          </h2>
+          <p className="text-[14px] leading-[20px] font-normal text-[#706F6F] md:self-start text-center md:text-left self-center mb-4">
+            Explore the Merchandise.
+          </p>
+
+
+          {/* cards */}
+          {/* ✅ Grid Section - Starts Here 👇 */}
+          <div className="w-full rounded-xl relative  p-6 h-full ">
+            {/* Background Layer */}
+            {/* <div className="absolute top-0 -right-4 md:-right-6 bg-repeat-y lg:-right-14 w-screen h-full opacity-60 bg-center bg-[url('./assets/backgrounds/cracking.png')]"></div> */}
+
+
+            <section
+              id="Projects"
+              className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-6 justify-between"
+            >
+              {/* cards components */}
+              {/* card 1  */}
+              <ProductCard
+                profileImg={Emily}
+                name={"Emily Chen"}
+                productImg={EmilyProduct}
+                price={100}
+
+              />
+              {/* card 2  */}
+              <ProductCard
+                profileImg={Richard}
+                name={"Richard Ong"}
+                productImg={RichardProduct}
+                price={100}
+
+              />
+              {/* card 3  */}
+              <ProductCard
+                profileImg={Alex}
+                name={"Alex Kim"}
+                productImg={AlexProduct}
+                price={100}
+
+              />
+              {/* card 3  */}
+              <ProductCard
+                profileImg={Mia}
+                name={"Mia Johnson"}
+                productImg={MiaProduct}
+                price={100}
+
+              />
+
+            </section>
+          </div>
+          {/* ✅ Grid Section - Ends Here */}
+        </section>
       </main>
+        {/* Rankings main container */}
+        <main className="bg-[url('./assets/backgrounds/ranking-bg.png')] bg-center bg-cover flex flex-col items-center gap-2 py-2">
+          <section className="flex flex-col items-center gap-2  max-w-7xl w-full">
+          <div className="py-16">
+            <div className="flex justify-center items-end gap-8 relative">
+
+              {/* Second Place */}
+             <div className="relative flex flex-col items-center w-[220px]">
+  
+  {/* Medal */}
+  <img 
+    src={Medal2} 
+    alt="2nd" 
+    className="w-[100px] h-[100px] object-contain"
+  />
+
+  {/* Profile Image */}
+  <img
+    src="/second.jpg"
+    alt="Second"
+    className="w-[70px] h-[70px] rounded-full border-[4px] border-white shadow-md -mt-8 z-10"
+  />
+
+  {/* Rank Box */}
+  <div
+    className="w-[430px] h-[332px] bg-[url('./assets/backgrounds/rank-box.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center text-black font-bold text-sm -mt-6 p-2"
+  >
+    <p>USERNAME:000</p>
+    <p>RANK: 2ND</p>
+  </div>
+</div>
+
+
+              
+
+            </div>
+          </div>
+          </section>
+        </main>
     </>
   )
 }

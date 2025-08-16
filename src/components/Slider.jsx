@@ -112,7 +112,7 @@ const Slider = () => {
     return (
         <div className="w-full max-w-full space-y-4">
             {/* Slider */}
-            <div className="relative h-[400px] w-full">
+            <div className="relative h-[600px] w-full">
                 <Swiper
                     ref={swiperRef}
                     modules={[Scrollbar, Autoplay]}
@@ -134,7 +134,7 @@ const Slider = () => {
                     {slides.map((src, index) => (
                         <SwiperSlide key={index}>
                             <div
-                                className="w-full h-full rounded-xl flex items-center relative overflow-hidden"
+                                className="w-full h-[600px] rounded-xl flex items-center relative overflow-hidden"
                                 style={{
                                     backgroundImage: `url(${src})`,
                                     backgroundSize: "cover",
@@ -156,7 +156,7 @@ const Slider = () => {
                 ref={scrollbarRef}
                 className="swiper-scrollbar !h-2 !bg-gray-200 !rounded-full !mt-4 !relative"
             >
-                <div className="swiper-scrollbar-drag !bg-blue-600 !rounded-full !h-full !absolute !left-0 !top-0" />
+                <div className="swiper-scrollbar-drag !bg-[#9147FF] !rounded-full !h-full !absolute !left-0 !top-0" />
             </div>
 
             {/* Styling */}
