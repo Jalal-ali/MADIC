@@ -267,45 +267,79 @@ const App = () => {
           {/* ✅ Grid Section - Ends Here */}
         </section>
       </main>
-        {/* Rankings main container */}
-        <main className="bg-[url('./assets/backgrounds/ranking-bg.png')] bg-center bg-cover flex flex-col items-center gap-2 py-2">
-          <section className="flex flex-col items-center gap-2  max-w-7xl w-full">
+      {/* Rankings main container */}
+      <main className="bg-[url('./assets/backgrounds/ranking-bg.png')] bg-center bg-cover flex flex-col items-center gap-2 py-2">
+        <section className="flex flex-col items-center gap-2 max-w-7xl w-full">
           <div className="py-16">
-            <div className="flex justify-center items-end gap-8 relative">
+            <div className="flex justify-center items-end gap-20 relative h-[400px]">
 
-              {/* Second Place */}
-             <div className="relative flex flex-col items-center w-[220px]">
-  
-  {/* Medal */}
-  <img 
-    src={Medal2} 
-    alt="2nd" 
-    className="w-[100px] h-[100px] object-contain"
-  />
+              {/* First Place (Center, Highest) */}
+              <div className="flex flex-col items-center w-[220px] z-10 mb-8 absolute">
+                {/* Medal */}
+                <img
+                  src={Medal1} // Make sure to import Medal1
+                  alt="1st"
+                  className="w-auto h-[120px] object-contain"
+                />
+                {/* Profile Image */}
+                <img
+                  src="/first.jpg"
+                  alt="First"
+                  className="w-[80px] h-[80px] rounded-full border-[4px] border-yellow-400 shadow-md -mt-10 z-20"
+                />
+                {/* Rank Box */}
+                <div className="w-[286px] h-[221px] bg-[url('./assets/backgrounds/rank-box.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center text-black font-bold text-sm -mt-6 p-2">
+                  <p>USERNAME:000</p>
+                  <p>RANK: 1ST</p>
+                </div>
+              </div>
 
-  {/* Profile Image */}
-  <img
-    src="/second.jpg"
-    alt="Second"
-    className="w-[70px] h-[70px] rounded-full border-[4px] border-white shadow-md -mt-8 z-10"
-  />
+              {/* Second Place (Left, Middle Height) */}
+              <div className="flex flex-col items-center w-[220px] z-5 mb-4 absolute">
+                {/* Medal */}
+                <img
+                  src={Medal2}
+                  alt="2nd"
+                  className="w-[100px] h-[100px] object-contain"
+                />
+                {/* Profile Image */}
+                <img
+                  src="/second.jpg"
+                  alt="Second"
+                  className="w-[70px] h-[70px] rounded-full border-[4px] border-white shadow-md -mt-8 z-10"
+                />
+                {/* Rank Box */}
+                <div className="w-[286px] h-[221px] bg-[url('./assets/backgrounds/rank-box.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center text-black font-bold text-sm -mt-6 p-2">
+                  <p>USERNAME:000</p>
+                  <p>RANK: 2ND</p>
+                </div>
+              </div>
 
-  {/* Rank Box */}
-  <div
-    className="w-[430px] h-[332px] bg-[url('./assets/backgrounds/rank-box.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center text-black font-bold text-sm -mt-6 p-2"
-  >
-    <p>USERNAME:000</p>
-    <p>RANK: 2ND</p>
-  </div>
-</div>
-
-
-              
+              {/* Third Place (Right, Lowest) */}
+              <div className="flex flex-col items-center w-[220px] z-0 absolute">
+                {/* Medal */}
+                <img
+                  src={Medal3} // Make sure to import Medal3
+                  alt="3rd"
+                  className="w-[80px] h-[80px] object-contain"
+                />
+                {/* Profile Image */}
+                <img
+                  src="/third.jpg"
+                  alt="Third"
+                  className="w-[60px] h-[60px] rounded-full border-[4px] border-white shadow-md -mt-6 z-10"
+                />
+                {/* Rank Box */}
+                <div className="w-[286px] h-[221px] bg-[url('./assets/backgrounds/rank-box.png')] bg-cover bg-no-repeat flex flex-col justify-center items-center text-black font-bold text-sm -mt-6 p-2">
+                  <p>USERNAME:000</p>
+                  <p>RANK: 3RD</p>
+                </div>
+              </div>
 
             </div>
           </div>
-          </section>
-        </main>
+        </section>
+      </main>
     </>
   )
 }
