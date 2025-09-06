@@ -9,7 +9,7 @@ const Navbar = () => {
     href="javascript:void(0)"
     className="flex items-center whitespace-nowrap text-2xl font-black"
   >
-    <a href='/' className="mr-2 w-18">
+    <a href='/' className="mr-2 w-15 md:w-18">
       <img src={Logo} alt="logo" className='-mb-1' />
     </a>
     

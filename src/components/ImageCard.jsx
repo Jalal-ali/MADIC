@@ -9,7 +9,7 @@ const ImageCard = ({imgSrc}) => {
 //     className="w-full h-full object-cover rounded-lg"
 //   />
 // </div>
- <div className="w-[320px] h-[360px] rounded-3xl bg-[#9147FF] overflow-hidden p-3 mb-6">
+ <div className="w-[320px] z-50 h-[360px] rounded-3xl bg-[#9147FF] overflow-hidden p-3 mb-6">
     <img
       src={imgSrc}
       alt="Card 1"

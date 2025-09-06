@@ -42,8 +42,8 @@ const App = () => {
     <>
       {/* Hero  */}
       <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-        <section className="flex flex-col items-center gap-2 py-2 max-w-7xl w-full -mt-12 md:-my-36">
-          <img src={HeroImg} alt="" />
+        <section className="flex flex-col items-center gap-4 md:gap-2 py-2 max-w-7xl w-full -mt-12 md:-my-36">
+          <img src={HeroImg} alt="Hero Banner" className='scale-[1.080] md:scale-none' />
           <div className="-mt-10 md:-mt-28 flex justify-center items-center space-x-2 ">
 
             <a
@@ -182,7 +182,7 @@ const App = () => {
             Explore the Merchandise.
           </p>
           {/* image cards  */}
-          <div className="flex flex-wrap justify-between  py-10">
+          <div className="flex flex-wrap justify-center md:justify-between py-10">
             <ImageCard imgSrc="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=60" />
             <ImageCard imgSrc="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=60" />
             <ImageCard imgSrc="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=60" />
