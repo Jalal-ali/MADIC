@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../assets/logo/site-logo.png'
 
 const Navbar = () => {
   return (
@@ -8,10 +9,10 @@ const Navbar = () => {
     href="#"
     className="flex items-center whitespace-nowrap text-2xl font-black"
   >
-    <span className="mr-2 w-8">
-      <img src="/images/JOJj79gp_Djhwdp_ZOKLL.png" alt="" />
+    <span className="mr-2 w-18">
+      <img src={Logo} alt="logo" />
     </span>
-    spline
+    
   </a>
   <input type="checkbox" className="peer hidden" id="navbar-open" />
   <label
