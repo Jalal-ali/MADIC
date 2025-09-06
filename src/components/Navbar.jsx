@@ -6,12 +6,12 @@ const Navbar = () => {
     <>
     <header className="text-slate-700 container relative  flex flex-col overflow-hidden max-w-7xl w-full mx-auto px-6 py-4 lg:flex-row lg:items-center">
   <a
-    href="#"
+    href="javascript:void(0)"
     className="flex items-center whitespace-nowrap text-2xl font-black"
   >
-    <span className="mr-2 -mb-0.5 w-18">
-      <img src={Logo} alt="logo" />
-    </span>
+    <a href='/' className="mr-2 w-18">
+      <img src={Logo} alt="logo" className='-mb-1' />
+    </a>
     
   </a>
   <input type="checkbox" className="peer hidden" id="navbar-open" />
@@ -44,7 +44,7 @@ const Navbar = () => {
           className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
           href="#"
         >
-          Components
+          Products
         </a>
       </li>
       <li className="lg:mr-12">
@@ -52,7 +52,15 @@ const Navbar = () => {
           className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
           href="#"
         >
-          Pricing
+          Creators
+        </a>
+      </li>
+      <li className="lg:mr-12">
+        <a
+          className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
+          href="#"
+        >
+          Blog
         </a>
       </li>
       <li className="lg:mr-12">
@@ -63,27 +71,19 @@ const Navbar = () => {
           Contact
         </a>
       </li>
-      <li className="lg:mr-12">
-        <a
-          className="rounded text-gray-700 transition focus:outline-none focus:ring-1 focus:ring-blue-700 focus:ring-offset-2"
-          href="#"
-        >
-          FAQ
-        </a>
-      </li>
     </ul>
     <hr className="mt-4 w-full lg:hidden" />
     <div className="my-4 flex items-center space-x-2 space-y-2 lg:my-0 lg:ml-auto lg:space-x-2 lg:space-y-0">
      
       <a
-        href="#"
+        href="javascript:void(0)"
         title=""
         className="whitespace-nowrap rounded-full px-8 py-3 border border-[#9147FF] font-medium text-black transition-all duration-200 "
       >
         Login
       </a>
       <a
-        href="#"
+        href="javascript:void(0)"
         title=""
         className="whitespace-nowrap rounded-full bg-[#9147FF] px-8 py-3 font-medium text-white transition-all duration-200"
       >
