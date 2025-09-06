@@ -4,12 +4,12 @@ import Logo from '../assets/logo/site-logo.png'
 const Navbar = () => {
   return (
     <>
-    <header className="text-slate-700 container relative  flex flex-col overflow-hidden max-w-7xl w-full mx-auto px-1 py-4 lg:flex-row lg:items-center">
+    <header className="text-slate-700 container relative  flex flex-col overflow-hidden max-w-7xl w-full mx-auto px-6 py-4 lg:flex-row lg:items-center">
   <a
     href="#"
     className="flex items-center whitespace-nowrap text-2xl font-black"
   >
-    <span className="mr-2 w-18">
+    <span className="mr-2 -mb-0.5 w-18">
       <img src={Logo} alt="logo" />
     </span>
     
