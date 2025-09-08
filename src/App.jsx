@@ -49,14 +49,14 @@ const App = () => {
             <a
               href="#"
               title=""
-              className="whitespace-nowrap bg-white rounded-full px-6 md:px-8 py-3 border border-[#9147FF] font-medium text-black transition-all duration-200 "
+              className="primary-btn px-6 md:px-8 py-3  "
             >
               Explore Collections
             </a>
             <a
               href="#"
               title=""
-              className="whitespace-nowrap rounded-full bg-[#9147FF] px-4 md:px-10 py-3 font-medium text-white transition-all duration-200"
+              className="dashed-btn  "
             >
               Buy Now
             </a>
@@ -74,8 +74,8 @@ const App = () => {
             className="w-full z-10 rounded-xl bg-cover bg-center  py-12 bg-[url('./assets/categories/twitch-bg.png')]"
           >
             <div className="max-w-7xl mx-auto px-4 flex items-center justify-center ">
-              <h1 className="text-white text-lg md:text-3xl font-bold flex items-center gap-2 ">
-                <FaTwitch className="w-6 h-6 md:w-8 md:h-8" />
+              <h1 className="text-white text-lg md:text-[46px] font-bold flex items-center gap-4 luckiest">
+                <FaTwitch className="w-6 h-6 md:w-16 md:h-16" />
                 TWITCH PACKAGES
               </h1>
             </div>
@@ -258,10 +258,10 @@ const App = () => {
       {/* Products  */}
       <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <section className="flex flex-col items-center gap-2  max-w-7xl w-full">
-          <h2 className="w-[308px] h-[36px] text-[36px] leading-[36px] font-normal text-[#24282B] md:self-start text-center md:text-left self-center mb-4">
+          <h2 className="w-[308px] h-[36px] heading leading-[36px] font-normal text-[#24282B] md:self-start text-center md:text-left self-center mb-4">
             Merch Collection
           </h2>
-          <p className="text-[14px] leading-[20px] font-normal text-[#706F6F] md:self-start text-center md:text-left self-center mb-4">
+          <p className="text-[14px] sub-heading leading-[20px]  text-[#706F6F] md:self-start text-center md:text-left self-center mb-4">
             Explore the Merchandise.
           </p>
 
