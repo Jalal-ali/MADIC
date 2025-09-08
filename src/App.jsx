@@ -55,8 +55,8 @@ const App = () => {
             </a>
             <a
               href="#"
-              title=""
-              className="dashed-btn  "
+              title="buy now"
+              className="dashed-btn"
             >
               Buy Now
             </a>

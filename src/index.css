@@ -1,1 +1,41 @@
 @import "tailwindcss";
+/* Optional: import Google Fonts */
+/* Import Google Font */
+/* @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); */
+
+/* Custom classes for MADIC UI */
+.heading {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+    color: #24282B;
+    /* text color */
+    text-transform: uppercase;
+    /* make text uppercase */
+}
+.sub-heading {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.luckiest {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.primary-btn {
+  font-family: "Syne", sans-serif;
+  @apply whitespace-nowrap rounded-full bg-[#9147FF] text-white transition-all duration-200 hover:bg-purple-700;
+}
+.secondary-btn {
+  font-family: "Syne", sans-serif;
+  @apply whitespace-nowrap rounded-full text-[#9147FF] bg-white transition-all duration-200 hover:bg-[#9147FF] hover:text-white;
+}
+.dashed-btn{
+  font-family: "Syne", sans-serif;
+    @apply px-4 md:px-14 py-2.5  border-2 border-dashed border-[#9147FF] text-[#9147FF] whitespace-nowrap rounded-full bg-white transition-all duration-200 hover:bg-[#9147FF] hover:text-white hover:border-white;
+}
+
